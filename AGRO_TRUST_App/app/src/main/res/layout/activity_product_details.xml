@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".Product_Details"
+    android:background="#f1faee"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_height="match_parent"
+        android:background="#f1faee"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="239dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="329dp"
+
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Result"
+            android:textColor="#CE290C"
+            android:textSize="34sp" />
+    <Button
+        android:id="@+id/b1"
+        android:backgroundTint="#E63946"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/boltsemibold"
+        android:text="Verify Seller"
+        android:textAlignment="center"
+        android:textColor="#fafafa"
+        android:textSize="21sp"
+        />
+        <Button
+            android:id="@+id/b3"
+            android:backgroundTint="#E63946"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/boltsemibold"
+            android:text="Buy"
+            android:textAlignment="center"
+            android:textColor="#fafafa"
+            android:textSize="21sp"
+            />
+    <Button
+        android:id="@+id/b2"
+        android:backgroundTint="#E63946"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/boltsemibold"
+        android:text="Back"
+        android:textAlignment="center"
+        android:textColor="#fafafa"
+        android:textSize="21sp"
+        />
+
+
+    </LinearLayout>
+</ScrollView>

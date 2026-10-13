@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<meta http-equiv="refresh" content="5">
+<h2 class="text-center mb-4">AGRO-TRUST!!</h2>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow p-3 mb-3">
+            <h5 class="card-title text-center text-primary">AGRO-TRUST!! | SENSOR DETAILS</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Temperature:</strong> {{ sensor_data.temperature }}</li>
+                <li class="list-group-item"><strong>Humidity:</strong> {{ sensor_data.humidity }}</li>
+                <li class="list-group-item"><strong>MQ:</strong> {{ sensor_data.mq }}</li>
+                <li class="list-group-item"><strong>Latitude:</strong> {{ sensor_data.lat }}</li>
+                <li class="list-group-item"><strong>Longitude:</strong> {{ sensor_data.lon }}</li>
+            </ul>
+
+            <!-- View on Map Button -->
+            <div class="text-center mt-3">
+                <a href="https://www.google.com/maps?q={{ sensor_data.lat }},{{ sensor_data.lon }}" 
+                   target="_blank" 
+                   class="btn btn-success">
+                    View on Map
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

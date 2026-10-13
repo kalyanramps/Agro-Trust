@@ -1,0 +1,33 @@
+```gitignore
+# 1. Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# 2. Node.js / React dependencies
+node_modules/
+
+# 3. Spring Boot / Maven build output
+**/target/
+
+# 4. Gradle build output (Android)
+**/build/
+
+# 5. Android Studio / IntelliJ files
+**/.idea/
+**/.gradle/
+**/local.properties
+
+# 6. Python virtual environments
+**/venv/
+**/.venv/
+**/__pycache__/
+*.py[cod]
+
+# 7. Logs and temporary files
+*.log
+*.tmp
+
+# 8. OS-generated files
+.DS_Store
+Thumbs.db
